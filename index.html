@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    ```
+    <title>Rafat Nazia Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+    ```
+
+</head>
+
+<body>
+
+```
+<!-- NAVBAR -->
+
+<nav>
+    <h2>Rafat Nazia</h2>
+
+    <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button id="theme-toggle" class="theme-btn">
+        🌙
+    </button>
+</nav>
+
+<!-- HERO -->
+
+<section class="hero">
+    <h1>Hi, I'm Rafat Nazia 👋</h1>
+
+
+    <p>
+        <span id="typing"></span>
+    </p>
+    <p class="availability">
+        🚀 Available for Internships & Freelance Projects
+    </p>
+    <script>
+        const texts = [
+            "Java Full Stack Developer",
+            "Spring Boot Developer",
+            "AI/ML Enthusiast",
+            "Problem Solver"
+        ];
+
+        let count = 0;
+        let index = 0;
+        let currentText = "";
+        let letter = "";
+
+        (function type(){
+
+            if(count === texts.length){
+                count = 0;
+            }
+
+            currentText = texts[count];
+            letter = currentText.slice(0, ++index);
+
+            document.getElementById("typing").textContent = letter;
+
+            if(letter.length === currentText.length){
+                count++;
+                index = 0;
+
+                setTimeout(type, 1500);
+            }else{
+                setTimeout(type, 100);
+            }
+
+        })();
+    </script>
+</body>
+
+    <div class="hero-buttons">
+
+        <a href="#" class="btn">
+            Download CV
+        </a>
+
+        <a href="https://github.com/RafatNazia" class="btn btn-dark">
+            GitHub
+        </a>
+
+        <a href="https://www.linkedin.com/in/rafatnazia/" class="btn btn-dark">
+            LinkedIn
+        </a>
+
+    </div>
+
+</section>
+
+<!-- ABOUT -->
+
+<section id="about" class="hidden">
+
+    <h2>About Me</h2>
+
+    <p>
+        I am a passionate Java Full Stack Developer with
+        strong knowledge of Java, Spring Boot, MySQL,
+        HTML, CSS and JavaScript.
+
+        I enjoy creating modern web applications
+        and continuously improving my development skills.
+    </p>
+
+</section>
+
+<!-- SKILLS -->
+
+<section id="skills" class="hidden">
+
+    <h2>Skills</h2>
+
+    <div class="cards">
+
+        <div class="card skill-card">
+            <h3>☕ Java</h3>
+            <div class="skill-bar">
+                <div class="skill-fill java"></div>
+            </div>
+        </div>
+
+        <div class="card skill-card">
+            <h3>🌱 Spring Boot</h3>
+            <div class="skill-bar">
+                <div class="skill-fill spring"></div>
+            </div>
+        </div>
+
+        <div class="card skill-card">
+            <h3>🗄️ MySQL</h3>
+            <div class="skill-bar">
+                <div class="skill-fill mysql"></div>
+            </div>
+        </div>
+
+        <div class="card skill-card">
+            <h3>🌐 HTML</h3>
+            <div class="skill-bar">
+                <div class="skill-fill html"></div>
+            </div>
+        </div>
+
+        <div class="card skill-card">
+            <h3>🎨 CSS</h3>
+            <div class="skill-bar">
+                <div class="skill-fill css"></div>
+            </div>
+        </div>
+
+        <div class="card skill-card">
+            <h3>⚡ JavaScript</h3>
+            <div class="skill-bar">
+                <div class="skill-fill js"></div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- PROJECTS -->
+
+<section id="projects" class="hidden">
+
+    <h2>Projects</h2>
+
+    <div class="cards">
+
+        <div class="card project-card">
+            <div>
+                <h3>Portfolio Website</h3>
+                <p>Spring Boot • HTML • CSS</p>
+
+                <a href="#" class="project-btn">
+                    View Project
+                </a>
+            </div>
+        </div>
+
+        <div class="card project-card">
+            <div>
+                <h3>Student Management System</h3>
+                <p>Java • MySQL</p>
+            </div>
+        </div>
+
+        <div class="card project-card">
+            <div>
+                <h3>Online Food Ordering System</h3>
+                <p>Spring Boot • MySQL</p>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+<section id="achievements" class="hidden">
+
+    <h2>Achievements</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            🏆 Prodigy Infotech Internship
+        </div>
+
+        <div class="card">
+            🎓 Java Full Stack Training
+        </div>
+
+        <div class="card">
+            🤖 AI / ML Projects
+        </div>
+
+    </div>
+</section>
+    <section id="timeline" class="hidden">
+
+        <h2>My Timeline</h2>
+
+        <div class="timeline">
+
+            <div class="timeline-item">
+                <span>2022</span>
+                <p>Completed Intermediate (Science)</p>
+            </div>
+
+            <div class="timeline-item">
+                <span>2025</span>
+                <p>Mobile App Developer Intern - Prodigy InfoTech</p>
+            </div>
+
+            <div class="timeline-item">
+                <span>2025</span>
+                <p>Built AI/ML & Java Projects</p>
+            </div>
+
+            <div class="timeline-item">
+                <span>2025</span>
+                <p>Java Full Stack Development Training</p>
+            </div>
+
+            <div class="timeline-item">
+                <span>2027</span>
+                <p>B.Tech AI & ML Graduation</p>
+            </div>
+
+        </div>
+</section>
+<section id="stats" class="hidden">
+
+    <h2>My Journey</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h1>6+</h1>
+            <p>Projects</p>
+        </div>
+
+        <div class="card">
+            <h1>10+</h1>
+            <p>Technologies</p>
+        </div>
+
+        <div class="card">
+            <h1>1</h1>
+            <p>Internship</p>
+        </div>
+
+        <div class="card">
+            <h1>2027</h1>
+            <p>Graduation</p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- CONTACT -->
+
+<<section id="contact" class="hidden">
+
+    <h2>Contact Me</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h1>📧</h1>
+            <p>rafatnazia4@gmail.com</p>
+        </div>
+
+        <div class="card">
+            <h1>📱</h1>
+            <p>+91 85418*****</p>
+        </div>
+
+        <div class="card">
+            <h1>💼</h1>
+            <p>LinkedIn</p>
+        </div>
+
+        <div class="card">
+            <h1>🐙</h1>
+            <p>GitHub</p>
+        </div>
+
+    </div>
+
+</section>
+<!-- FOOTER -->
+
+<footer>
+
+    Designed & Developed by Rafat Nazia ❤️
+
+</footer>
+```
+<script>
+
+    const observer = new IntersectionObserver((entries) => {
+
+        entries.forEach((entry) => {
+
+            if(entry.isIntersecting){
+                entry.target.classList.add("show");
+            }
+
+        });
+
+    });
+
+    const hiddenElements =
+    document.querySelectorAll(".hidden");
+
+    hiddenElements.forEach((el) =>
+    observer.observe(el));
+
+</script>
+<script>
+
+    const btn = document.getElementById("theme-toggle");
+
+    btn.addEventListener("click", () => {
+
+        document.body.classList.toggle("light-mode");
+
+        if(document.body.classList.contains("light-mode")){
+            btn.innerHTML = "☀️";
+        }
+        else{
+            btn.innerHTML = "🌙";
+        }
+
+    });
+
+</script>
+</body>
+
+</html>
